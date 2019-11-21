@@ -49,8 +49,8 @@ db.sqlite3
 instance/
 .webassets-cache
 
-
-
+# MacOS
+.DS_Store
 
 # Jupyter Notebook
 .ipynb_checkpoints
