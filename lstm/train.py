@@ -36,7 +36,7 @@ le = LabelEncoder()
 le_label_train = le.fit_transform(label_train).reshape(-1, 1)
 le_label_valid = le.fit_transform(label_valid).reshape(-1, 1)
 le_label_test = le.fit_transform(label_test).reshape(-1,1)
-
+le.__dict__()
 # 分类标签转为 one hot
 ohe = OneHotEncoder()
 le_label_train = ohe.fit_transform(le_label_train).toarray()
@@ -85,7 +85,7 @@ model.add(Dense(10))
 model.summary()
 """
 
-# epochs=12时 正确率80%
+# epochs=20时 正确率70%
 inputs = Input(name="inputs", shape=[max_len])
 layer = Embedding(max_word+1, 128, input_length=max_len)(inputs)
 layer = LSTM(128)(layer)
@@ -112,7 +112,7 @@ model.fit(
     train_seq_mat,
     le_label_train,
     batch_size=128,
-    epochs=20,
+    epochs=1,
     validation_data=(valid_seq_mat, le_label_valid),  # turn to mat
     # callbacks=[EarlyStopping(monitor='val_loss', min_delta=0.0001)],
 )
@@ -125,3 +125,12 @@ with open('model/token.pickle', 'wb') as f:
 score, acc = model.evaluate(test_seq_mat, le_label_test, batch_size=128)
 print(f"score: {score}, acc: {acc}")
 
+
+text = '北京时间12月18日，2019年东亚杯冠军产生，韩国队1-0击败日本队，以3战全胜的战绩历史上第5次获得东亚杯的冠军，成为首支东亚杯3连冠球队！虽然世界杯和亚洲杯的表现不如对手，但这一次韩国队找回场子，此外在去年亚运会以及今年世青赛，韩国国奥与韩国国青都曾击败日本队，3条战线都击败对手。'
+t = "北京 时间 12 月 18 2019 东亚 杯 冠军 产生 韩国队 1 0 击败 日本队 3 战全胜 战绩 历史 5 获得 东亚 杯 冠军 成为 首支 东亚 杯 3 连冠 球队 虽然 世界杯 亚洲杯 表现 不如 对手 一次 韩国队 找回 场子 此外 去年 亚运会 以及 今年 世青赛 韩国 国奥 韩国 国青 都 曾 击败 日本队 3 条 战线 都 击败 对手"
+
+seq = tok.texts_to_sequences([t])
+seq_mat = sequence.pad_sequences(seq, maxlen=max_len)
+
+c = model.predict(seq_mat)
+print(c)
