@@ -51,9 +51,7 @@ def token():
     df = pd.DataFrame([labels, inputs, tokenize, length]).T
     df = df.rename(columns={0: "labels", 1: 'inputs', 2: "tokenize", 3: 'length'})
     print(df)
-    # df.to_excel(f'{path}.xls')
-    df.to_json(f'{path}.json', )
-    df.to_csv(f'{path}.csv')
+    df.to_csv(f'sub-THUCNews.csv', )
     return df
 
 
