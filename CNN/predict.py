@@ -8,7 +8,7 @@ import jieba
 import re
 import numpy as np
 import torch
-from train import TextCNN
+from CNN.train import TextCNN
 
 MODEL_PATH = "best_model.pt"
 
