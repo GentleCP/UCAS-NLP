@@ -2,7 +2,13 @@
 1. 分词，写成one-hot
 2. 训练
 
+# 效果和参数
 
+- acc 66.3%  分类正确率66.3%
+
+- word5000
+- len5000
+- epoch30lstm
 
 # usage
 
