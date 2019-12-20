@@ -52,7 +52,7 @@ le_label_test = ohe.fit_transform(le_label_test).toarray()
 
 # 使用tokenizer 建立词组和向量的词典 因为程序只能处理数字
 max_word = 3000  # 词语的最多数量
-max_len = 500
+max_len = 1000
 tok = Tokenizer(num_words=max_word)
 tok.fit_on_texts(input_train)
 
@@ -110,7 +110,7 @@ model.fit(
     train_seq_mat,
     le_label_train,
     batch_size=128,
-    epochs=1,
+    epochs=50,
     validation_data=(valid_seq_mat, le_label_valid),  # turn to mat
     # callbacks=[EarlyStopping(monitor='val_loss', min_delta=0.0001)],
 )
