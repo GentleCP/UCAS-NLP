@@ -14,12 +14,12 @@ label, data, tokenize, length = load_data('sub-THUCNews.csv')
 input_data, input_label, _, _ = train_test_split(tokenize, label, test_size=0.9)
 
 text = """
-习近平指出，5年来，在崔世安行政长官带领下，澳门行政、立法、司法机关严格依照宪法和基本法办事，认真履职尽责，付出了辛勤劳动，取得了累累硕果，交出了一份让中央满意、让澳门居民满意的答卷。中央政府对大家的工作是充分肯定、高度评价的。
+北京时间12月18日，2019年东亚杯冠军产生，韩国队1-0击败日本队，以3战全胜的战绩历史上第5次获得东亚杯的冠军，成为首支东亚杯3连冠球队！虽然世界杯和亚洲杯的表现不如对手，但这一次韩国队找回场子，此外在去年亚运会以及今年世青赛，韩国国奥与韩国国青都曾击败日本队，3条战线都击败对手。
 """
 
 
 def predict(text):
-    max_len = 500
+    max_len = 1000
     stopwords = [i.strip() for i in open("stopwords.txt", encoding='u8').read()]
 
     token = " ".join([i for i in jieba.cut(text) if i not in stopwords])
