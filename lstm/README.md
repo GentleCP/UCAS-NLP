@@ -4,11 +4,11 @@
 
 # 效果和参数
 
-- acc 66.3%  分类正确率66.3%
+- acc 70.4%  
 
-- word5000
-- len5000
-- epoch30lstm
+- word 3000
+- len 1000
+- epoch 50
 
 # usage
 
