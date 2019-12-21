@@ -10,16 +10,16 @@ import numpy as np
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder
 
 try:
-    from lstm.pre_process import load_data
-except ImportError:
     from pre_process import load_data
+except ImportError:
+    from lstm.pre_process import load_data
 
 from pathlib import Path
 
 import os
 
 max_len = 300
-base = os.path.dirname(Path(__file__).absolute())
+base = os.path.dirname(os.path.abspath(__file__).absolute())
 
 csv_data = base + "/THUCNews"
 test_data = base + "/sub-THUCNews"
