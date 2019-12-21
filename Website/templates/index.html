@@ -2,9 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test</title>
+    <title>文本分类</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="/static/jquery.min.js"></script>
+    <script src="/static/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-<body>
-this is a test
+<body background="/static/view.jpeg">
+<div class="container">
+    <div style="text-align: center">
+        <h1 style="font-family: 'Heiti SC';font-size: 60px">Average-3.5m^2 文本分类</h1>
+        <p style="font-size: 20px">文本分类共四个模型 - SVM DL NB LSTM</p>
+    </div>
+</div>
+<div class="col-md-3"></div>
+<div class="col-md-7">
+<form method="post" class="form-inline">
+    {% csrf_token %}
+    <div class="form-group col-md-3">
+        <textarea class="form-control" rows="10" cols="25" placeholder="输入需要分类的文本信息" name="data">{{ data }}</textarea>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-3">
+        <div class="row">
+        <br>
+        <br>
+{#        <select name="type">#}
+{#            <option value="svm">支持向量机</option>#}
+{#            <option value="dl">深度学习</option>#}
+{#            <option value="nb">朴素贝叶斯</option>#}
+{#            <option value="lstm">长短期记忆网络</option>#}
+{#        </select>#}
+        </div>
+        <br>
+        <br>
+        <div class="row">
+        <input type="submit" class="form-control" value="提交">
+        </div>
+    </div>
+    <div class="form-group">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>模型</th>
+                <th>结果</th>
+                <th>状态</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for r in r_set %}
+            <tr>
+            <td>{{ r.model }}</td>
+            <td>{{ r.result }}</td>
+            <td>{{ r.status }}</td>
+            </tr>
+            {% endfor %}
+            
+            </tbody>
+        </table>
+
+    </div>
+
+</form>
+
+</div>
+<div class="col-md-3"></div>
 </body>
 </html>
