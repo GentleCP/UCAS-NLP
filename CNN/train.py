@@ -206,38 +206,49 @@ def save(model, save_dir, save_prefix, steps):
 
 # evaluation
 CLASSES = ["体育", "娱乐", "家居", "彩票", "房产", "教育", "时尚", "时政", "星座", "游戏", "社会", "科技", "股票", "财经"]
-
+val_history = {'acc': [], 'loss': []}
+val_evaluation = {'y_true': [], 'y_pred': []}
 from sklearn.metrics import confusion_matrix, precision_recall_fscore_support
 import matplotlib.pyplot as plt
 import seaborn as sns
 
 sns.set(font="simhei")
-
 import numpy as np
 import pandas as pd
+from texttable import Texttable
 
 
 def show_history(history):
-    plt.figure(figsize=(6, 6))
-    plt.plot(history['acc'], color='green')
-    plt.plot(history['loss'], color='red')
-    plt.title('History')
-    plt.ylabel('acc/loss')
-    plt.xlabel('Batch')
-    plt.legend(['acc', 'loss'], loc='upper right')
+    plt.figure(figsize=(8, 6))
+    plt.plot(history['acc'])
+    plt.plot(history['loss'])
+    plt.ylim(0, 2)
+    plt.xlim(0, 3000)
+    plt.xticks(fontsize=13)
+    plt.yticks(fontsize=13)
+    plt.title('History', fontsize=17)
+    plt.ylabel('acc/loss', horizontalalignment='right', fontsize=15)
+    plt.xlabel('Batch', horizontalalignment='right', fontsize=15)
+    plt.legend(['acc', 'loss'], loc='upper right', fontsize=15)
+    plt.savefig("history.png", dpi=200)
     plt.show()
 
 
 def show_confusion_matrix(evaluation):
-    f, ax = plt.subplots(figsize=(10, 10))
+    f, ax = plt.subplots(figsize=(12, 10))
     df = pd.DataFrame(confusion_matrix(evaluation['y_true'], evaluation['y_pred']), columns=CLASSES, index=CLASSES)
     # print(df)
-    ax = sns.heatmap(df, annot=True, fmt="d", cmap="YlGnBu", linewidths=0.5)
+    ax = sns.heatmap(df, annot=True, robust=True, fmt="d", cmap="Oranges", linewidths=0.5)
+    # ax.set_ylim(0.5, 0.5) 
+    print(ax.get_ylim())
+    ax.set_ylim(14, 0)
+    ax.xaxis.tick_top()
+    ax.tick_params(direction='in')
     label_y = ax.get_yticklabels()
     plt.setp(label_y, rotation=360, horizontalalignment='right', fontsize=13)
     label_x = ax.get_xticklabels()
-    plt.setp(label_x, rotation=45, horizontalalignment='right', fontsize=13)
-    #f.savefig("confusion_matrix.png", bbox_inches='tight', dpi=200)
+    plt.setp(label_x, horizontalalignment='center', fontsize=13)
+    f.savefig("confusion_matrix.png", bbox_inches='tight', dpi=200)
     plt.show()
 
 
@@ -247,11 +258,17 @@ def show_statistics(evaluation):
     avg_r = np.average(r, weights=s)
     avg_f1 = np.average(f1, weights=s)
     total_s = np.sum(s)
-    df1 = pd.DataFrame({'类别': CLASSES, 'Precision': p, 'Recall': r, 'F1': f1, 'Support': s})
-    df2 = pd.DataFrame(
-        {'类别': ['全部'], 'Precision': [avg_p], 'Recall': [avg_r], 'F1': [avg_f1], 'Support': [total_s]})
+    df1 = pd.DataFrame({'类别': CLASSES, '准确率': p, '召回率': r, 'F-measure': f1, '数量': s})
+    df2 = pd.DataFrame({'类别': ['总体'], '准确率': [avg_p], '召回率': [avg_r], 'F-measure': [avg_f1], '数量': [total_s]})
     df2.index = [14]
     df = pd.concat([df1, df2])
+    tb = Texttable()
+    print(df)
+    tb.set_cols_align(['l', 'r', 'r', 'r', 'r'])
+    # tb.set_cols_dtype(['t','i','i'])
+    tb.header(df.columns.get_values())
+    tb.add_rows(df.values, header=False)
+    print(tb.draw())
 
 
 def show():
