@@ -17,18 +17,28 @@ from keras.callbacks import LambdaCallback
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing import sequence
 
-from pre_process import load_data
+try:
+    from lstm.pre_process import load_data
+except ImportError:
+    from .pre_process import load_data
+
+max_word = 3000  # 词语的最多数量
+max_len = 1000
+datafile = "THUCNews"
+testfile = "sub-THUCNews"
 
 print(f"init at: {time.ctime()}")
 # def read_flag():
 
-labels, data, tokenize, length = load_data("sub-THUCNews.csv")
+
+labels, data, tokenize, length = load_data(datafile)
+label_test, _, input_test, _ = load_data(testfile)
 
 # x: input y:label
 
 # 划分测试集训练集
 input_train, input_valid, label_train, label_valid = train_test_split(tokenize, labels, test_size=0.3)
-input_train, input_test, label_train, label_test = train_test_split(input_train, label_train, test_size=0.2)
+# input_train, input_test, label_train, label_test = train_test_split(input_train, label_train, test_size=0.2)
 print(f"data num: {len(tokenize)}, train num {len(input_train)}, valid num: {len(input_valid)}")
 
 # 对分类的标签编码
@@ -51,8 +61,6 @@ le_label_test = ohe.fit_transform(le_label_test).toarray()
 # input_valid = ohe.transform(le_label_valid).toarray()  # ?
 
 # 使用tokenizer 建立词组和向量的词典 因为程序只能处理数字
-max_word = 3000  # 词语的最多数量
-max_len = 1000
 tok = Tokenizer(num_words=max_word)
 tok.fit_on_texts(input_train)
 
