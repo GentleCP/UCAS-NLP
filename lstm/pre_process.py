@@ -17,10 +17,7 @@ def get_test_set(s: Path, d: Path):
     for folder in files:
         # os.mkdir(d/folder)
         test_set = os.listdir(s / folder)
-        print(folder,len(test_set), len(test_set) * 0.2)
-
-
-    pass
+        print(folder, len(test_set), len(test_set) * 0.2)
 
 
 def read_file(p: Path) -> (list, list):
@@ -81,9 +78,9 @@ def token():
 
 
 def load_data(filename):
-    xzfilename = f"{filename}.csv.xz"
-    datafilename = f"{filename}.csv"
-    print(f"unzip {xzfilename} to {datafilename}")
+    xzfilename = "{}.csv.xz".format(filename)
+    datafilename = "{}.csv".format(filename)
+    print("unzip {} to {}".format(xzfilename, datafilename))
 
     # z = zipfile.ZipFile(zipfilename)
     # z.extract(datafilename, '.')
@@ -91,7 +88,7 @@ def load_data(filename):
 
     # df = pd.read_csv(datafilename)
     df = pd.read_csv(lzma.open(xzfilename))
-    print(f"load {filename} finish.")
+    print("load {} finish.".format(filename))
     return df.labels, df.inputs, df.tokenize, df.length
 
 
