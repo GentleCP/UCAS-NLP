@@ -19,7 +19,7 @@ from pathlib import Path
 import os
 
 max_len = 300
-base = os.path.dirname(os.path.abspath(__file__).absolute())
+base = os.path.dirname(os.path.abspath(__file__))
 
 csv_data = base + "/THUCNews"
 test_data = base + "/sub-THUCNews"
