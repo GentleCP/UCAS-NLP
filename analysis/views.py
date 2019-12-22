@@ -27,7 +27,7 @@ def index(request):
         if request.POST['type'] == 'dl':
             print('dl')
             r = 'xxxxxx'
-            # r = cnn_predict(data)
+            r = cnn_predict(data)
             r_set.append({'result': r, 'model': 'cnn'})
 
         if request.POST['type'] == 'nb':

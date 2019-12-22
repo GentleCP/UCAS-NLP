@@ -8,9 +8,12 @@ import jieba
 import re
 import numpy as np
 import torch
-from CNN.cnn_train import TextCNN
+from manage import TextCNN
+import os
 
-MODEL_PATH = "cnn_model.pt"
+base = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = base + "/cnn_model.pt"
+STOP_WORD = base + "/stopwords.txt"
 
 
 def tokenizer(text):
@@ -20,7 +23,7 @@ def tokenizer(text):
 
 
 def get_stop_words():
-    with open('stopwords.txt', encoding="utf-8") as f:
+    with open(STOP_WORD, encoding="utf-8") as f:
         stop_words = []
         for line in f.readlines():
             line = line[:-1]
@@ -97,5 +100,5 @@ def cnn_predict(text):
 
 if __name__ == '__main__':
     text = '12月16日，vivo在桂林发布了其首款支持SA和NSA双模组网的5G手机X30系列。尽管最高搭载60倍超级变焦系统的X30系列定位影像旗舰，但这款产品搭载的三星猎户座Exynos 980芯片，同样吸引着外界无数的目光。传统上，除华为外，国内安卓手机普遍采用高通系的5G芯片。不过，今年11月初，vivo和三星官宣了共同研发的双模5G芯片Exynos 980，vivo X30系列正是vivo首款搭载Exynos 980的产品。'
-    catogory = predict(text)
+    catogory = cnn_predict(text)
     # print(type(catogory))
