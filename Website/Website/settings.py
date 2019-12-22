@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'analysis',
-    'bootstrapform',
 ]
 
 MIDDLEWARE = [
@@ -76,16 +75,16 @@ WSGI_APPLICATION = 'Website.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'nlp_web',
-        'HOST': '127.0.0.1',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'PORT': '3306',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'nlp_web',
+#         'HOST': '127.0.0.1',
+#         'USER': 'root',
+#         'PASSWORD': 'root',
+#         'PORT': '3306',
+#     }
+# }
 
 
 # Password validation
