@@ -1,0 +1,8 @@
+手游平台OpenFeint将GameFeed移iOS
+　　9月2日消息，据国外媒体报道，移动社交游戏网络OpenFeint将旗下人气颇高的服务GameFeed移植到了iOS平台上。
+　　OpenFeint的移动社交游戏平台包含一系列在线游戏服务，例如排行榜、虚拟货币和成就(achievement)。
+　　GameFeed是OpenFeint的移动社交游戏平台整合的社交游戏信息流服务，旨在提高玩家的参与度。GameFeed发布更新后的玩家档案、玩家成就等消息。
+　　OpenFeint声称，通过增添GameFeed插件，24名β试验参与者的每用户对话数量(sessions-per-user)平均增长了25%，部分开发者的增幅高达60%。
+　　OpenFeint还宣布，游戏开发商Big Blue Bubble、Get Set Games、PikPok和Sibblingz将整合GameFeed。
+　　OpenFeint首先将GameFeed移植到了Android平台，通过支持iOS平台，GameFeed的信息流实现了跨平台。
+

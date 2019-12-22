@@ -1,0 +1,11 @@
+《愤怒的小鸟》开发商Rovio被诉侵权
+　　7月23日消息，据国外媒体报道，美国专利授权公司Lodsys日前向《愤怒的小鸟》开发商Rovio和艺电等游戏厂商提出诉讼。Lodsys拒绝对该诉讼发表评论。
+　　Lodsys此前在5月31日围绕着授权使用Lodsys的专利权，针对7个小型iOS平台开发者提起诉讼，现在Lodsys又针对Rovio、艺电、Atari、Square Enix和Take-Two Interactive等游戏厂商提起诉讼。
+　　美国专利博客网站FOSS Patents知识产权分析师弗洛里安·穆勒(Florian  Mueller)表示：“Lodsys并不畏惧起诉财大气粗的应用开发者。考虑到Lodsys已经身涉三起专利诉讼，并且所涉及的公司都是像惠普、兄弟 (Brother)、阿迪达斯(Adidas)、百思买(Best Buy)、纽约时报(The New York  Times)等大型公司，因此我对于Lodsys起诉Rovio和艺电等游戏厂商的行为，并不感到吃惊。”
+　　诉讼指责Rovio等游戏厂商侵犯涉及应用付费技术的专利权。Lodsys要求获得上述公司使用该项专利在美国所获得全部营收的0.575%。
+　　诉讼具体列举了各家游戏厂商的游戏产品，其中包括Rovio旗下游戏《愤怒的小鸟》、艺电旗下iPhone版游戏《模拟人生3》(The  Sims 3 for iPhone)、Atari旗下iPhone和iPad版游戏《Greatest Hits》、Square  Enix旗下iPhone和iPad版游戏《棒球本垒打》(Big Hit  Baseball)以及Take-Two旗下iPhone版游戏《北美冰球联赛》(2K Sports NHL 2K11)。
+　　Rovio旗下游戏《愤怒的小鸟》一直是一款最为畅销的游戏，其下载量已经超过逾2.5亿次，目前该款游戏的活跃用户人数达1亿。如果Lodsys起诉Rovio获得胜诉，Lodsys最终将获得稳定的营收。
+　　Rovio并未立即对此发表评论
+　　Lodsys此前已经针对科技领域里的37家厂商提起诉讼。苹果认为，公司从Lodsys购买的专利授权，应当可以扩展覆盖至被Lodsys起 诉的iOS应用开发者。但这将由法庭进行决断。遭受Lodsys起诉的还包括Android应用开发商，《愤怒的小鸟》则是该起诉讼中最为著名的跨平台应 用。
+　　穆勒指出：“Lodsys最近向Android开发者和Android社区网站发送了大量专利声明信件，而谷歌对于该诉讼的沉默，以及并不积极的态度，使得Lodsys可能向更多的Android开发者提起诉讼，如果他们不支付相关专利使用费。”
+

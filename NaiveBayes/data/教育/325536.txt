@@ -1,0 +1,103 @@
+自考“高级语言程序设计”测试题及答案(3)
+　　9.你选择( 　)
+　　A.ch＝P
+　　B.ch＜＝P
+　　C.ch IN p
+　　D.ch＞＝P
+　　10.你选择( 　)
+　　A.ch：＝‘？’
+　　B.ch＝‘？’
+　　C.ch<　>‘？’
+　　D.ch＞‘？’
+　　五、编写程序题(每题10分，共30分)
+　　1、编一程序，计算并输出
+　　S＝1－x＋x2/2－x3/3＋…＋(-1)nxn/n(n＝1，2…)。其中x，n由终端输入。(x为实型，n为整型)
+　　2、编一程序，输入二维整数数组A5×5所有元素之值，寻找并输出该数组中最大元素之值(设只有一个)及其位置(行号和列号)。
+　　3、编一程序，从终端输入两个英文句子，每句均以句号结束，输出此两句子中都出现的所有大字英文字母。
+　　查看解析
+　　答案
+　　一、是非题
+　　1 B 2 A 3 A 4 A 5 B 6 A 7 B 8 B 9 B 10 B
+　　二、单选题
+　　1 D 2 C 3 D 4 A 5 A
+　　三、填空题
+　　1、‘1’‘9’
+　　2、地址
+　　3、999
+　　4、16.0
+　　5、ASCⅡ
+　　6、(A≥B)AND(B≥C)
+　　7、指针类型
+　　8、exp(abs(x))＋3
+　　9、 所在子程序执行
+　　10、字符
+　　四、选择填空题
+　　1 C 2 B 3 A 5 D 6 A 7 B 8 A 9 C 10 B
+　　五、编写程序
+　　1、PROGRAM sum(input，output)；
+　　VAR
+　　n，i：integer；
+　　x，s，t：real；
+　　BEGIN
+　　S：＝1，t：＝1
+　　read(x，n)；
+　　FOR i：＝1 TO n DO
+　　BEGIN
+　　t：＝－t*x；
+　　S：＝S＋t/i
+　　END；
+　　writeln(S)
+　　END；
+　　评分细则：
+　　s，t初值占1分；
+　　输入占1分；
+　　FOR语句占7分；
+　　输出占1分。
+　　2、PROGRAM largest(input，output)；
+　　VAR
+　　a：ARRAY[1··5，1··5]OF integer；
+　　max ，i，j，h，l：integer；
+　　BEGIN
+　　max：＝－maxint -1；
+　　FOR i：＝1 TO 5DO
+　　FOR j：＝1TO 5 DO
+　　read (a[i，i]；
+　　FOR i：＝1 TO 5DO
+　　FOR j：＝1TO 5 DO
+　　IF max＜a[i，j]THEN
+　　BEGIN
+　　max：＝a[i，j]；
+　　h：＝i；
+　　l：＝j
+　　END；
+　　writeln(max，h，l)
+　　END。
+　　评分细则：
+　　max初值占1分；
+　　输入占1分；
+　　求max，h，l占7分；输出占12分。
+　　3、 PROGRAM xyz(input，output)；
+　　VAR
+　　a，b：SET OF ‘A’··‘Z’；
+　　ch：char；
+　　BEGIN
+　　a：＝[]； b：＝[]；
+　　REPEAT
+　　read(ch)；
+　　IF (ch＞＝‘A’)AND (ch＜＝‘Z’)
+　　THEN a：a＋[ch]
+　　UNTIL ch＝‘·’；
+　　REPEAT
+　　read(ch)；
+　　IF (ch＞＝‘A’) AND (ch＜＝‘Z’)
+　　THEN b：＝b＋[ch]
+　　UNTIL ch＝‘·’；
+　　FOR ch：＝‘A’ TO ‘Z’DO
+　　IF (ch IN a) AND(ch IN b)
+　　THEN write(ch)
+　　END。
+　　评分细则：
+　　统计第一句大字字母，2分；
+　　统计第二句中大写字母，2分；
+　　输出共同的大写英文字母，6分。
+

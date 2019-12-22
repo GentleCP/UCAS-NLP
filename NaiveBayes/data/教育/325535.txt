@@ -1,0 +1,91 @@
+自考“高级语言程序设计”测试题及答案(2)
+　　END
+　　END。
+　　1.你选择( 　)
+　　A.reset(ff)
+　　B.writeln(ff)
+　　C.rewrite(ff)
+　　D.new(ff)
+　　2.你选择( 　)
+　　A.b：＝false
+　　B.b：＝true
+　　C.b：＝‘false’
+　　D.b：＝‘true’
+　　3.你选择( 　)
+　　A.b：=false
+　　B.b：＝true
+　　C.b：＝‘false’
+　　D.b：＝‘true’
+　　问题：构造一链表，并按与输入相同的次序输出该链表中的数据。
+　　程序：
+　　PROGRAM fifolist(input，output)；
+　　TYPE
+　　pointer＝↑cooperate；
+　　cooperate＝RECORD
+　　next：pointer；
+　　data：integer
+　　END；
+　　VAR
+　　p1，p2，p3：pointer；
+　　BEGIN
+　　( 　④　　)；
+　　P3：＝P1
+　　read(p1↑。data)；
+　　WHILE NOT eof DO
+　　BEGIN
+　　( 　⑤　　)；
+　　read(p2↑。data)；
+　　( 　⑥　　)；
+　　p3：＝p2
+　　END；
+　　P2↑。next：＝NIL；
+　　WHILE P1 NIL DO
+　　GEGIN
+　　write(p1↑。data)；
+　　( 　⑦　　)；
+　　END；
+　　END。
+　　4.你选择( 　)
+　　A.P1：＝NIL
+　　B.P2：＝NIL
+　　C.NEW(P1)
+　　D.new(p2)
+　　5.你选择( 　)
+　　A.P1：＝NIL
+　　B.P2：＝NIL
+　　C.new(P1)
+　　D.new(P2)
+　　6.你选择( 　)
+　　A.p3↑。next：=P2
+　　B.P3↑。next：＝NIL
+　　C.P3↑。next：＝P2↑。next
+　　D.p3↑。next：＝p3
+　　7.你选择( 　)
+　　A.↑。next：＝P1
+　　B.P1：＝P1↑。next
+　　C.P1＝P2.next
+　　D.P1↑。next：P2↑。next
+　　问题：统计并输出输入字串标点符号‘·’，‘，’，‘：’和‘；’出现的总次数，直至出现字符‘？’为止。
+　　程序：
+　　PROGRAM counter(input，output)；
+　　TYPE
+　　tp＝SET OF char‘
+　　VAR
+　　P：tp；
+　　ch：chart；count：integer；
+　　BEGIN
+　　( 　⑧　　)；
+　　p：[‘·’，‘，’，‘：’，‘：’]；
+　　REPEAT
+　　read(ch)；
+　　IF( 　⑨　　)；
+　　THEN count：＝count＋1
+　　UNTIL( 　⑩　　)；
+　　writeln(count)
+　　END。
+　　8.你选择( 　)
+　　A.count：＝0
+　　B.count：＝1
+　　C.ch：＝‘　’
+　　D.count：＝－1
+

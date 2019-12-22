@@ -1,0 +1,96 @@
+自考“高级语言程序设计”测试题(六)
+　　2、PROGRAM largest(input，output)；
+　　VAR
+　　a：ARRAY[1··5，1··5]OF integer；
+　　max ，i，j，h，l：integer；
+　　BEGIN
+　　max：＝－maxint -1；
+　　FOR i：＝1 TO 5DO
+　　FOR j：＝1TO 5 DO
+　　read (a[i，i]；
+　　FOR i：＝1 TO 5DO
+　　FOR j：＝1TO 5 DO
+　　IF max＜a[i，j]THEN
+　　BEGIN
+　　max：＝a[i，j]；
+　　h：＝i；
+　　l：＝j
+　　END；
+　　writeln(max，h，l)
+　　END。
+　　评分细则：
+　　max初值占1分；
+　　输入占1分；
+　　求max，h，l占7分；输出占12分。
+　　3、 PROGRAM xyz(input，output)；
+　　VAR
+　　a，b：SET OF ‘A’··‘Z’；
+　　ch：char；
+　　BEGIN
+　　a：＝[]； b：＝[]；
+　　REPEAT
+　　read(ch)；
+　　IF (ch＞＝‘A’)AND (ch＜＝‘Z’)
+　　THEN a：a＋[ch]
+　　UNTIL ch＝‘·’；
+　　REPEAT
+　　read(ch)；
+　　IF (ch＞＝‘A’) AND (ch＜＝‘Z’)
+　　THEN b：＝b＋[ch]
+　　UNTIL ch＝‘·’；
+　　FOR ch：＝‘A’ TO ‘Z’DO
+　　IF (ch IN a) AND(ch IN b)
+　　THEN write(ch)
+　　END。
+　　评分细则：
+　　统计第一句大字字母，2分；
+　　统计第二句中大写字母，2分；
+　　输出共同的大写英文字母，6分。
+　　2、PROGRAM largest(input，output)；
+　　VAR
+　　a：ARRAY[1··5，1··5]OF integer；
+　　max ，i，j，h，l：integer；
+　　BEGIN
+　　max：＝－maxint -1；
+　　FOR i：＝1 TO 5DO
+　　FOR j：＝1TO 5 DO
+　　read (a[i，i]；
+　　FOR i：＝1 TO 5DO
+　　FOR j：＝1TO 5 DO
+　　IF max＜a[i，j]THEN
+　　BEGIN
+　　max：＝a[i，j]；
+　　h：＝i；
+　　l：＝j
+　　END；
+　　writeln(max，h，l)
+　　END。
+　　评分细则：
+　　max初值占1分；
+　　输入占1分；
+　　求max，h，l占7分；输出占12分。
+　　3、 PROGRAM xyz(input，output)；
+　　VAR
+　　a，b：SET OF ‘A’··‘Z’；
+　　ch：char；
+　　BEGIN
+　　a：＝[]； b：＝[]；
+　　REPEAT
+　　read(ch)；
+　　IF (ch＞＝‘A’)AND (ch＜＝‘Z’)
+　　THEN a：a＋[ch]
+　　UNTIL ch＝‘·’；
+　　REPEAT
+　　read(ch)；
+　　IF (ch＞＝‘A’) AND (ch＜＝‘Z’)
+　　THEN b：＝b＋[ch]
+　　UNTIL ch＝‘·’；
+　　FOR ch：＝‘A’ TO ‘Z’DO
+　　IF (ch IN a) AND(ch IN b)
+　　THEN write(ch)
+　　END。
+　　评分细则：
+　　统计第一句大字字母，2分；
+　　统计第二句中大写字母，2分；
+　　输出共同的大写英文字母，6分。
+

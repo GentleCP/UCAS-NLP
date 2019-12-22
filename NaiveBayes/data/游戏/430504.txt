@@ -1,0 +1,28 @@
+《机动战士高达：极限对决》游戏系统
+　　近日，Namco Bandai公布了PS3版《机动战士高达：极限对决》的最新画面和相关情报。
+　　本作的游戏系统基本沿用系列的系统设定，让玩家们进行2对2的小队战，只要某一方画面左上方显示的“战力量表”(?力ゲ?ジ，红色为敌人，绿色为我方)先归零就算失败。当玩家击破敌人机体时，会依照敌人机体成本来减少相应的战力量表。同样，我方友机或玩家自己的机体被击破，我方战力量表也会减少。只要在战力量表归零前机体都可以无限次?活，因此玩家们可以借此来拟订独特的战略打倒对手成功获得胜利。战力量表的总成本数为6000，而游戏中登场各机体的单机成本则有1000、2000、2500跟3000等四种类型。成本越高的机体，性能也就越好，但风险也较高，如何取舍就要看玩家自己了。
+　　基本操作上，玩家们除了可以利用方向键来进行八个方位的移动之外，另外还可以利用“跳跃”(ジャンプ)键完成跳跃动作，或是利用“索敌/锁定”(サ?チ/ロックオン)来搜索敌人/自动锁定对手，再用“射击”或“格斗”键来进行实际的交战。交战时，玩家们可以利用上下键来进行防御，还可以按住按键集气，配合特殊格斗与辅助射击等各种动作，操纵机体在战场上享受纵横杀敌的对战乐趣。
+　　同时本作还加入“EX系统”(EXシステム)的设定，玩家可以通过消费特定的EX量表，取消各种动作，并发动专属特定动作，比如“喷射?刺”(ブ?ストダッシュ)或“?避”(ステップ)的，前者可以将射击与格斗等全部行动取消以换取更快速长距离移动，后者则可以进行短距离快速移动。玩家们也可以通过消费一半的EX量表来发动所谓的“极限破坏”(Extreme Burst/エクストリ?ムバ?スト)，并在一定时间内提升机体能力进行战斗，如何善用这些特殊行动，也将会是玩家们在战斗中的重要关键所在。
+　　本作的参战作品众多，列表如下：
+　　·机动战士高达(Mobile Suit Gundam/机动?士ガンダム)
+　　·机动战士Z高达(Mobile Suit Gundam Z/机动?士Zガンダム)
+　　·机动战士高达ZZ(Mobile Suit Gundam ZZ/机动?士ガンダムZZ)
+　　·机动战士高达 逆袭的夏亚(Mobile Suit Gundam：Char's Counterattack/机动?士ガンダム 逆袭のシャア)
+　　·机动战士高达F91(Mobile Suit Gundam F91/机动?士ガンダムF91)
+　　·机动战士V高达(Mobile Suit Victory Gundam/机动?士Vガンダム)
+　　·机动武斗传G高达(Mobile Fighter G Gundam/机动武??Gガンダム)
+　　·新机动战记高达W 无尽的华尔兹(New Mobile Report Gundam Wing Endless Waltz/新机动?记ガンダムW Endless Waltz)
+　　·机动新世纪高达X(After War Gundam X/机动新世纪ガンダムX)
+　　·倒A高达(Turn A Gundam/∀ガンダム)
+　　·机动战士高达Seed(Mobile Suit Gundam Seed/机动?士ガンダムSEED)
+　　·机动战士高达Seed Astray(Mobile Suit Gundam Seed Astray/机动?士ガンダムSEED ASTRY)
+　　·机动战士高达Seed Destiny(Mobile Suit Gundam Seed Destiny/机动?士ガンダムSEED DESTINY)
+　　·机动战士高达OO(Mobile Suit Gundam OO/机动?士ガンダムOO)
+　　·剧场版 机动战士高达OO ：觉醒的先驱者(Mobile Suit Gundam OO -A wakening of the Trailblazer-/剧场版 机动?士ガンダムOO -A wakening of the Trailblazer-)
+　　·机动战士高达UC(Mobile Suit Gundam UC/机动?士ガンダムUC)
+　　·机动战士高达0080 口袋中的战争(Mobile Suit Gundam 0080 War in the Pocket/机动?士ガンダム0080 ポケットの中の?争)
+　　·机动战士高达 0083 星尘的回忆(Mobile Suit Gundam 0083 Stardust Memory/机动?士ガンダム0083 スタ?ダストメモリ?)
+　　·机动战士高达 第08MS小队(Mobile Suit Gundam The 08th MS Team/机动?士ガンダム　第08MS小队)
+　　·机动战士高达MS Igloo(Mobile Suit Gundam MS Igloo/机动?士ガンダムMSIGLOO)
+　　·机动战士 骷髅高达(Mobile Suit Crossbone Gundam/机动?士クロスボ?ン.ガンダム)
+

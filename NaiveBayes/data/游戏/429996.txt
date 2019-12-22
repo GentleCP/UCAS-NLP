@@ -1,0 +1,7 @@
+Zynga收购iPhone游戏框架工具开发者
+       北京时间5月10日早间消息，社交游戏开发商Zynga周一宣布，该公司已通过收购获得了iPhone游戏开发框架工具的两名关键开发者。根据协议，阿根廷人里卡多·克萨达(Ricardo Quesada)和智利人罗纳尔多·阿瓦尔卡(Rolando Abarca)，这两位开发者将为Zynga旧金山公司工作。Zynga最近不断进行了多次小型收购，在过去的12个月当中，该公司已完成了13笔收购交易。 
+　　Cocos2d被许多iPhone程序采用，包括各大游戏公司如雅达利、南梦宫、Gamevil和Zynga都会使用这一开源代码来开发iPhone、iPod Touch、Mac等设备上的游戏产品。克萨达和阿瓦尔卡将在Zynga继续致力于支持和开发cocos2d，进而支持公司推出的iPhone游戏产品。
+　　上述的两位开发者此前都效力于iOS游戏开发工具商Sapus Media，而在本次交易中Zynga收购了Sapus Media的特定资产。此前克萨达和阿瓦尔卡等人联合开发了cocos2d，并为手机游戏开发者提供了专业的游戏开发工具。
+　　Zynga表示，该公司不会收购cocos2d技术社区网站cocos2d-iphone.org。Zynga首席技术官(CTO)卡德尔·李(Cadir Lee)表示，克萨达和阿瓦尔卡是cocos2d的关键开发者，公司获得此二人可以帮助Zynga更好地进行技术控制。他同时指出：“我们将为他们出资继续开发平台，这些平台也会成为Zynga的开发工具，确保我们能够更好的利用这些平台。”cocos2d-iphone.org网站将继续由阿瓦尔卡和其他一些cocos2d管理人员独立管理。
+　　今年以来，Zynga已经完成收购包括游戏开发商Wonderland、音乐游戏开发商JamLegend、网络纸牌游戏服务商MarketZero、游戏开发商Floodgate、社交浏览器Flock，以及纽约的社交游戏开发商Area/Code在内的多家企业。
+

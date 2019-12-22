@@ -1,0 +1,3 @@
+微软体感设备Kinect于2012年推出PC版
+　　微软为X360游戏机开发的体感游戏设备Kinect已经被运动到医疗、考古、科技等各个领域。微软表示将于2012年初，进行面向Windows的Kinect商用计划，名为“Kinect for Windows SDK”。目前Kinect在全世界已经卖出了1000多万台。
+
