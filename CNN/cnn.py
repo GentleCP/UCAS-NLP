@@ -2,15 +2,15 @@
 """
 Created on Thu Dec 19 16:37:02 2019
 
-@author: 34712
+@author: huxiao
 """
 import jieba
 import re
 import numpy as np
 import torch
-from CNN.train import TextCNN
+from CNN.cnn_train import TextCNN
 
-MODEL_PATH = "best_model.pt"
+MODEL_PATH = "cnn_model.pt"
 
 
 def tokenizer(text):
@@ -87,7 +87,7 @@ def do_predict(model, x):
     return CLASS_DICT[class_id]
 
 
-def predict(text):
+def cnn_predict(text):
     model, vocab = model_load()
     x = text_preprocess(text, vocab)
     catogory = do_predict(model, x)
