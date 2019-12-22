@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 from NaiveBayes import naive_bayes
-
+from lstm.predict import predict as lstm_predict
 
 from CNN.cnn import cnn_predict
 # Create your views here.
@@ -38,7 +38,7 @@ def index(request):
 
         if request.POST['type'] == 'lstm':
             print('lstm')
-            r = 'xxxxxx'
+            r = lstm_predict(data)
             r_set.append({'result': r, 'model': 'lstm'})
 
 
