@@ -20,7 +20,7 @@ from keras.preprocessing import sequence
 try:
     from lstm.pre_process import load_data
 except ImportError:
-    from .pre_process import load_data
+    from pre_process import load_data
 
 max_word = 3000  # 词语的最多数量
 max_len = 1000
