@@ -1,6 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+from NaiveBayes import naive_bayes
+from NaiveBayes.naive_bayes import NaiveBayes
+
+
 # Create your views here.
 
 
@@ -29,7 +33,8 @@ def index(request):
 
         # if request.POST['type'] == 'nb':
         #     print('nb')
-        r = 'xxxxxx'
+        nb = naive_bayes.load_model('../../NaiveBayes/bayes_model.pkl')
+        r = nb.predict(data)
         s = 'success'
         r_set.append({'result': r, 'status': s, 'model': 'nb'})
 
@@ -47,5 +52,4 @@ def index(request):
 
     else:
         return HttpResponse('your method is not valid!')
-
 
