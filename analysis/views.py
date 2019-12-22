@@ -22,28 +22,24 @@ def index(request):
         #     print('svm')
             # do something
         # r = 'xxxxxx'
-        # s = 'success'
-        # r_set.append({'result': r, 'status': s, 'model': 'svm'})
+        # r_set.append({'result': r, 'model': 'svm'})
 
-        # if request.POST['type'] == 'dl':
-        #     print('dl')
-        r = 'xxxxxx'
-        s = 'success'
-        # r = cnn_predict(data)
-        r_set.append({'result': r, 'status': s, 'model': 'cnn'})
+        if request.POST['type'] == 'dl':
+            print('dl')
+            r = 'xxxxxx'
+            # r = cnn_predict(data)
+            r_set.append({'result': r, 'model': 'cnn'})
 
-        # if request.POST['type'] == 'nb':
-        #     print('nb')
-        nb = naive_bayes.load_model('NaiveBayes/bayes_model.pkl')
-        r = nb.predict(data)
-        s = 'success'
-        r_set.append({'result': r, 'status': s, 'model': 'nb'})
+        if request.POST['type'] == 'nb':
+            print('nb')
+            nb = naive_bayes.load_model('NaiveBayes/bayes_model.pkl')
+            r = nb.predict(data)
+            r_set.append({'result': r, 'model': 'nb'})
 
-        # if request.POST['type'] == 'lstm':
-        #     print('lstm')
-        r = 'xxxxxx'
-        s = 'success'
-        r_set.append({'result': r, 'status': s, 'model': 'lstm'})
+        if request.POST['type'] == 'lstm':
+            print('lstm')
+            r = 'xxxxxx'
+            r_set.append({'result': r, 'model': 'lstm'})
 
 
         # do something
