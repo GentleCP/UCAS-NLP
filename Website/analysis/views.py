@@ -21,9 +21,9 @@ def index(request):
         # if request.POST['type'] == 'svm':
         #     print('svm')
             # do something
-        r = 'xxxxxx'
-        s = 'success'
-        r_set.append({'result': r, 'status': s, 'model': 'svm'})
+        # r = 'xxxxxx'
+        # s = 'success'
+        # r_set.append({'result': r, 'status': s, 'model': 'svm'})
 
         # if request.POST['type'] == 'dl':
         #     print('dl')
