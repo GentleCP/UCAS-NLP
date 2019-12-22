@@ -57,10 +57,10 @@ def text_preprocess(str, vocab):
     str_after_2id = []
 
     for word in str_after_stop_words:
-        if word in vocab.stoi:
+        if word in vocab.stoi.keys():
             str_after_2id.append(vocab.stoi[word])
         else:
-            str_after_2id.append(vocab.stoi[0])
+            str_after_2id.append(0)
 
     str_after_pad = []
     str_after_pad.append([0] * max(0, 100 - len(str_after_2id)) + str_after_2id[:100])
