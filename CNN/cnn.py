@@ -39,6 +39,7 @@ def model_load():
     vocab = checkpoint["vocab"]
     return model, vocab
 
+model, vocab = model_load()
 
 def text_preprocess(str, vocab):
     str_after_token = tokenizer(str)
@@ -91,7 +92,7 @@ def do_predict(model, x):
 
 
 def cnn_predict(text):
-    model, vocab = model_load()
+
     x = text_preprocess(text, vocab)
     catogory = do_predict(model, x)
     # print(catogory)
