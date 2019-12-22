@@ -70,6 +70,7 @@ def predict(text):
     max_index = np.argmax(pre)
     max_type = l[max_index]
     confidence = {k: v for k, v in sorted(confidence.items(), key=lambda item: item[1], reverse=True)}
+    print(confidence)
     return max_type
 
 
