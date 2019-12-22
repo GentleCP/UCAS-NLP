@@ -34,6 +34,8 @@ token_path = base + "/model/token.pickle"
 text = """
 北京时间12月18日，2019年东亚杯冠军产生，韩国队1-0击败日本队，以3战全胜的战绩历史上第5次获得东亚杯的冠军，成为首支东亚杯3连冠球队！虽然世界杯和亚洲杯的表现不如对手，但这一次韩国队找回场子，此外在去年亚运会以及今年世青赛，韩国国奥与韩国国青都曾击败日本队，3条战线都击败对手。
 """
+model = load_model(model_path)
+tok = pickle.load(open(token_path, 'rb'))
 
 
 def predict(text):
@@ -42,8 +44,6 @@ def predict(text):
     token = " ".join([i for i in jieba.cut(text) if i not in stopwords])
     print(token)
 
-    model = load_model(model_path)
-    tok = pickle.load(open(token_path, 'rb'))
 
     test_seq = tok.texts_to_sequences([token])
     test_seq_mat = sequence.pad_sequences(test_seq, maxlen=max_len)
