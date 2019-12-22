@@ -20,7 +20,7 @@ from keras.preprocessing import sequence
 try:
     from lstm.pre_process import load_data
 except ImportError:
-    from pre_process import load_data
+    from .pre_process import load_data
 
 from sklearn.metrics import confusion_matrix, precision_recall_fscore_support
 import matplotlib.pyplot as plt

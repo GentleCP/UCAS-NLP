@@ -120,7 +120,7 @@ import os
 EPOCH_SIZE = 10
 LR = 0.001
 VAL_INTERVAL = 100
-SAVE_BEST = True
+SAVE_BEST = False
 SAVE_DIR = 'model_vocab_dir'
 EARLY_STOPPING = 500
 
