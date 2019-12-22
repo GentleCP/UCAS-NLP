@@ -2,9 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 from NaiveBayes import naive_bayes
-from NaiveBayes.naive_bayes import NaiveBayes
 
 
+from CNN.cnn import cnn_predict
 # Create your views here.
 
 
@@ -29,11 +29,12 @@ def index(request):
         #     print('dl')
         r = 'xxxxxx'
         s = 'success'
-        r_set.append({'result': r, 'status': s, 'model': 'dl'})
+        # r = cnn_predict(data)
+        r_set.append({'result': r, 'status': s, 'model': 'cnn'})
 
         # if request.POST['type'] == 'nb':
         #     print('nb')
-        nb = naive_bayes.load_model('../../NaiveBayes/bayes_model.pkl')
+        nb = naive_bayes.load_model('NaiveBayes/bayes_model.pkl')
         r = nb.predict(data)
         s = 'success'
         r_set.append({'result': r, 'status': s, 'model': 'nb'})

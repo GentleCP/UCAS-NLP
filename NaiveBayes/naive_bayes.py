@@ -8,7 +8,7 @@ from collections import  Counter
 
 def load_stop_words(stop_words_path='stopword.txt',stop_signals={'\n','\u3000','\xa0',' ',}):
     if not os.path.exists(stop_words_path):
-        stop_words_path = '../../NaiveBayes/stopword.txt'
+        stop_words_path = 'NaiveBayes/stopword.txt'
     with open(stop_words_path,encoding='UTF-8-sig') as f:
         s_stop_words = set()
         for line in f:
