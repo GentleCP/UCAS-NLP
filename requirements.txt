@@ -2,7 +2,7 @@ asgiref==3.2.3
 certifi==2019.11.28
 chardet==3.0.4
 cycler==0.10.0
-Django==3.0.1
+Django==3.0.7
 idna==2.8
 jieba==0.39
 joblib==0.14.1
